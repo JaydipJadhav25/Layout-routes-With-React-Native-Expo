@@ -1,5 +1,7 @@
 import { Slot } from 'expo-router';
 import { Text } from 'react-native';
+import { Stack } from "expo-router"
+
 
 export default function SettingLayout() {
   return (
@@ -7,11 +9,31 @@ export default function SettingLayout() {
       {/* <Header /> */}
       <Text
       style ={{
-        fontSize : 100
+        fontSize : 50
       }}
       >setting Layout Page </Text>
-      <Slot />
+      {/* <Slot /> */}
+
+      <Stack
+      screenOptions={{
+        headerStyle: {
+            backgroundColor: '#f4511e',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+      }}
+      >
+
+        <Stack.Screen name='index'/>
+        <Stack.Screen name='setting1' options={{
+            title : "user setting no 1 "
+        }}/>
+     
+      {/* <Slot /> */}
       {/* <Footer /> */}
+      </Stack>
     </>
   );
 }
