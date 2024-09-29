@@ -18,6 +18,7 @@ export default function Index() {
     <Link href={"/jaydip"}>MyPage</Link>
     <Link href={"/about"}>about</Link>
     <Link href={"/settings"}>Settings</Link>
+    <Link href={"/user"}>User</Link>
 
     </View>
   );
