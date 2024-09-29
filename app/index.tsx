@@ -1,5 +1,7 @@
 import { Text, View  , Pressable} from "react-native";
-import { Link } from "expo-router";
+import { Link  } from "expo-router";
+import { router } from "expo-router";
+
 
 export default function Index() {
   return (
@@ -25,6 +27,35 @@ export default function Index() {
     </Pressable>
     </Link>
 
+    <Link
+        href={{
+          pathname: '/user/[username]',
+          params: { username: 'jaydipjadhav' }
+        }}
+       
+        >
+          View user
+        </Link>
+
+
+<Text style={{fontSize :50 , fontWeight : 300}}>Navigate between pages</Text>
+   
+   <button onClick={() =>{
+    router.push("/about")
+   }}>Push On About</button>
+
+<button onClick={() =>{
+    router.replace("/about")
+    // router.setParams(para)
+   }}>replace On About</button>
+
+
+  
+
+
+
     </View>
   );
 }
+
+

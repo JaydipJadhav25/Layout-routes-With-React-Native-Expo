@@ -18,6 +18,12 @@ const index = () =>{
     style = {{fontSize : 30 , fontWeight : 900}}
     >User Page </Text>
 
+    {/* <Link href={{
+      pathname : '(tads)/user/[username]',
+      params : {"username" : "jaydip"}
+    }}>
+      Username</Link> */}
+
     </View>
 
 
