@@ -15,15 +15,9 @@ export default function Index() {
       style = {{fontSize : 30 , fontWeight : 900}}
       >Home</Text>
 
-    <Link href={"/jaydip"}>MyPage</Link>
-    <Link href={"/about"}>about</Link>
-    <Link href={"/settings"}>Settings</Link>
-    <Link href={"/user"}>User</Link>
-    <Link href={"/profile"} asChild>
-    <Pressable>
-      <Text>Profile</Text>
-    </Pressable>
-    </Link>
+   
+
+    
 
     </View>
   );

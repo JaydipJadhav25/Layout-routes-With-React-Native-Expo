@@ -1,7 +1,7 @@
 import { Text, View  , Pressable} from "react-native";
 import { Link } from "expo-router";
 
-export default function Index() {
+export default function profile1() {
   return (
     <View
       style={{
@@ -13,18 +13,9 @@ export default function Index() {
     >
       <Text
       style = {{fontSize : 30 , fontWeight : 900}}
-      >Home</Text>
+      >Profile NO 1</Text>
 
-    <Link href={"/jaydip"}>MyPage</Link>
-    <Link href={"/about"}>about</Link>
-    <Link href={"/settings"}>Settings</Link>
-    <Link href={"/user"}>User</Link>
-    <Link href={"/profile"} asChild>
-    <Pressable>
-      <Text>Profile</Text>
-    </Pressable>
-    </Link>
-
+   
     </View>
   );
 }
